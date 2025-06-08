@@ -6,7 +6,7 @@
         "bcrypt": "^6.0.0"
     },
     "devDependencies": {
-        "prisma": "^6.8.2"
+        "prisma": "^6.9.0"
     },
     "exports": {
         "./client": "./index.ts"
