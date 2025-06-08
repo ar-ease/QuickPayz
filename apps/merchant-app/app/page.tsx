@@ -4,5 +4,5 @@
 
 export default function () {
   // const balance = useBalance();
-  return <div>hi there there </div>;
+  return <div>hi there </div>;
 }
