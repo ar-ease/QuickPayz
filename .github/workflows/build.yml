@@ -17,7 +17,8 @@ jobs:
           node-version: "20"
 
       - name: Install Dependencies
-        run: npm install
+        run: npm Install
+
       - name: Install Dependencies
         run: npm run db:generate
 
