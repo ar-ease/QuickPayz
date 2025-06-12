@@ -30,7 +30,7 @@ jobs:
           tags: 100xdevs/web-app:latest
 
       - name: Verify Pushed Image
-        run: docker pull 100xdevs/web-app:latest
+        run: docker pull arease/paytm-clone:latest
 
       - name: Deploy to EC2
         uses: appleboy/ssh-action@master
@@ -42,4 +42,4 @@ jobs:
             sudo docker pull arease/paytm-clone:latest
             sudo docker stop web-app || true
             sudo docker rm web-app || true
-            sudo docker run -d --name web-app -p 3005:3000 100xdevs/web-app:latest
+            sudo docker run -d --name web-app -p 3005:3000 arease/paytm-clone:latest
