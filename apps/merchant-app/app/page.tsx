@@ -7,7 +7,6 @@ export default function () {
   return (
     <>
       <div>hola there after</div>
-      <div>hi </div>
     </>
   );
 }
