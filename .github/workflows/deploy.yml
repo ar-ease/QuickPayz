@@ -3,7 +3,7 @@ name: Build and Deploy to Docker Hub
 on:
   push:
     branches:
-      - master # Adjusted to trigger on pushes to master
+      - master # Trigger on push to master
 
 jobs:
   build-and-push:
@@ -27,7 +27,7 @@ jobs:
           context: .
           file: ./docker/Dockerfile.user
           push: true
-          tags: 100xdevs/web-app:latest
+          tags: arease/paytm-clone:latest # Make sure this matches your pull step
 
       - name: Verify Pushed Image
         run: docker pull arease/paytm-clone:latest
