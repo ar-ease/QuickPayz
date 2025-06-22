@@ -29,11 +29,11 @@ export const authOptions: AuthOptions = {
           },
           create: {
             email: user.email,
-            name: user.name || "", // Handle potential null name
+            name: user.name || "",
             auth_type: account.provider === "google" ? "Google" : "Github",
           },
           update: {
-            name: user.name || "", // Handle potential null name
+            name: user.name || "",
             auth_type: account.provider === "google" ? "Google" : "Github",
           },
         });
